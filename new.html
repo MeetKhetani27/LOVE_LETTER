@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Letter 😘</title>
+    <style>
+      /* General Styling */
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: "Arial", sans-serif;
+        color: white;
+        overflow: hidden;
+        background: url('mk.jpeg') no-repeat center center/cover;
+      }
+
+      /* Overlay Effect */
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); /* Adjust transparency */
+        z-index: 0;
+      }
+
+      /* Animation Box Styling */
+      .animation-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        max-width: 700px;
+        height: auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(5px);
+        overflow: hidden;
+        position: relative;
+        z-index: 1; /* Ensures text is above the overlay */
+      }
+
+      /* Individual Text Styling */
+      .animation-box div {
+        opacity: 0;
+        transform: translateY(30px);
+        font-size: 1.5rem;
+        line-height: 1.8;
+        font-weight: bold;
+        color: #fff;
+        animation: fade-in 3s ease-in-out forwards;
+      }
+
+      /* Adjust font size for longer text */
+      .second-text {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+
+      /* Animation Timings */
+      .first-text {
+        animation-delay: 0s;
+      }
+
+      .second-text {
+        animation-delay: 3s;
+      }
+
+      .third-text {
+        animation-delay: 10s;
+      }
+
+      .fourth-text {
+        animation-delay: 14s;
+      }
+
+      .fifth-text {
+        animation-delay: 18s;
+      }
+
+      /* Fade-In Animation */
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .animation-box div {
+          font-size: 1.2rem;
+        }
+
+        .second-text {
+          font-size: 1rem;
+          line-height: 1.4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="animation-box">
+      <div class="first-text">When I'm with you, everything feels right.</div>
+      <div class="second-text">
+        Glad To Have u In My Life , Thank You For Being My Life! Happy Birthday, my love! <br />
+        On your special day, I just want to remind you how much you mean to me.
+        Every moment with you is a beautiful adventure, and I am so grateful to have you by my side.<br />
+        You light up my world with your smile, and your kindness and love inspire me every day.<br />
+        I hope this year brings you all the happiness you deserve, and I can’t wait to make even more memories together.
+        Wishing you a day as wonderful as you are!
+      </div>
+      <div class="third-text">I love seeing you blush.</div>
+      <div class="fourth-text">
+        Now that I've found you, I'm never going to let you go.
+      </div>
+      <div class="fifth-text">
+        Whenever I count my blessings, you are at the top of my list.
+      </div>
+    </section>
+  </body>
+</html>
